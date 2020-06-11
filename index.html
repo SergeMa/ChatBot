@@ -17,13 +17,13 @@
   visibility: hidden;
 }
 #control{
-  margin-right: 100px;
+  margin-right: 10px;
 }
 </style>
 </head>
 <body>
 
-    <button id="activate">Щось не зрозуміло?</button>
+  <button id="activate">Щось не зрозуміло?</button>
   <div id="location">
     <div id="here">
     </div>
@@ -60,7 +60,6 @@ document.getElementById("activate").onclick = function(el){
   document.getElementById("activate").innerHTML ="Щось не зрозуміло?";
     answerholder.style.visibility = "hidden";
   }
-
 }
 
 document.getElementById("sendinput").onclick = function(el){
@@ -106,7 +105,7 @@ document.getElementById("sendinput").onclick = function(el){
         answer = document.createTextNode("Не вимикайте Wi-Fi або передачу данних. Для пошуку інформації в інтернеті зайдіть у програму'Google Chrome' або 'Google'. Посередині або зверху екрану буде біла стрічка з надписом 'Пошук'. Нажміть на цю стрічку та напишіть те, що Вас цікавить. Натисніть на кнопку пошуку, що нагадує лупу");
         document.getElementById("input").value = "";
       }
-    if(document.getElementById("input").value.includes("Поговори") == true || document.getElementById("input").value.includes("поговори") == true || document.getElementById("input").value.includes("Мені сумно") == true || document.getElementById("input").value.includes("сумно") == true){
+      if(document.getElementById("input").value.includes("Поговори") == true || document.getElementById("input").value.includes("поговори") == true || document.getElementById("input").value.includes("Мені сумно") == true || document.getElementById("input").value.includes("сумно") == true){
         answer = document.createTextNode("Давайте поговоримо. Я намагатимуся Вас розвеселити. Просто давайте не говорити про політику, бо вона ще більше заведе Вас у дипресію.");
         document.getElementById("input").value = "";
       }
