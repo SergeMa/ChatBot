@@ -105,6 +105,14 @@ document.getElementById("sendinput").onclick = function(el){
         answer = document.createTextNode("Не вимикайте Wi-Fi або передачу данних. Для пошуку інформації в інтернеті зайдіть у програму'Google Chrome' або 'Google'. Посередині або зверху екрану буде біла стрічка з надписом 'Пошук'. Нажміть на цю стрічку та напишіть те, що Вас цікавить. Натисніть на кнопку пошуку, що нагадує лупу");
         document.getElementById("input").value = "";
       }
+    if(document.getElementById("input").value.includes("Поговори") == true || document.getElementById("input").value.includes("поговори") == true || document.getElementById("input").value.includes("Мені сумно") == true || document.getElementById("input").value.includes("сумно") == true){
+        answer = document.createTextNode("Давайте поговоримо. Я намагатимуся Вас розвеселити. Просто давайте не говорити про політику, бо вона ще більше заведе Вас у дипресію.");
+        document.getElementById("input").value = "";
+      }
+      if(document.getElementById("input").value.includes("Сумно") == true || document.getElementById("input").value.includes("сумно") == true || document.getElementById("input").value.includes("Поганий настрій") == true || document.getElementById("input").value.includes("поганий настрій") == true || document.getElementById("input").value.includes("погане відчуття") == true || document.getElementById("input").value.includes("Погане відчуття") == true || document.getElementById("input").value.includes("дипресія") == true || document.getElementById("input").value.includes("Дипресія") == true || document.getElementById("input").value.includes("дипрессія") == true || document.getElementById("input").value.includes("Дипрессія") == true){
+        answer = document.createTextNode("Заспокойтесь, у всіх була така ситуація. Вам потрібна моральна допомога. Можете написати своїм рідним, друзям або близьким людям. Поговоріть з ними, якщо не допоможе, напишіть до психіатра або до людей, які знають як заспокоювати. Якщо Ви не знаєте як шукати інформацію в інтернеті, напишіть 'Пошук інформації');
+        document.getElementById("input").value = "";
+      }
     answerholder.appendChild(answer);
     answerholder.style.textAlign ="left";
     answerholder.style.backgroundColor = "lightgreen";
